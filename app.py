@@ -41,9 +41,8 @@ stemmer = factory.create_stemmer()
 
 
 # Developer Trial Mode
-line_bot_api = LineBotApi('MPdOpOtxXVbl/jrQQ+c3yPxF9QXxuMeii4SIic9JbM3Jz36926rTdxnjMiLi2kVyBxbXSXvM9sSOr6yqZRrc4/ztlziD3E+wfdIQLtm2gVFkTT3IdDpYTaUcHZRov1828oCry2nercX7rl3rs+0fTQdB04t89/1O/w1cDnyilFU=')
+line_bot_api = LineBotApi('4vmxXW+ZUCbb8ZoN3NB6KK09pHJqnZEv1fabnZy0YKesMirubmTPvyt48kNUkaPuBxbXSXvM9sSOr6yqZRrc4/ztlziD3E+wfdIQLtm2gVHlUQu2w81DnuABLEmd8Du3+8LscUdf5afT4qWnOoU/sAdB04t89/1O/w1cDnyilFU=')
 handler = WebhookHandler('850c8b3703fc74a8b869ff582ebb0ba5')
-access_token_bearer = 'Bearer MPdOpOtxXVbl/jrQQ+c3yPxF9QXxuMeii4SIic9JbM3Jz36926rTdxnjMiLi2kVyBxbXSXvM9sSOr6yqZRrc4/ztlziD3E+wfdIQLtm2gVFkTT3IdDpYTaUcHZRov1828oCry2nercX7rl3rs+0fTQdB04t89/1O/w1cDnyilFU='
 
 def time_to_int(t):
         t = t.replace(' ', '').replace('-', '').replace(':', '')
