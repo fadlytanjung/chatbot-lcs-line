@@ -1,6 +1,8 @@
 import sys,os,json,requests,time
 from flask import Flask, request, abort
 import pprint as pp
+from fuzzywuzzy import fuzz
+from fuzzywuzzy import process
 from rivescript import RiveScript
 from dictionary_match import *
 from datetime import datetime
