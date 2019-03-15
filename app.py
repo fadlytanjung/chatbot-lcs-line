@@ -43,8 +43,8 @@ stemmer = factory.create_stemmer()
 
 
 # Developer Trial Mode
-line_bot_api = LineBotApi('API_KEY')
-handler = WebhookHandler('CHANNEL')
+line_bot_api = LineBotApi('4vmxXW+ZUCbb8ZoN3NB6KK09pHJqnZEv1fabnZy0YKesMirubmTPvyt48kNUkaPuBxbXSXvM9sSOr6yqZRrc4/ztlziD3E+wfdIQLtm2gVHlUQu2w81DnuABLEmd8Du3+8LscUdf5afT4qWnOoU/sAdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('850c8b3703fc74a8b869ff582ebb0ba5')
 
 def time_to_int(t):
         t = t.replace(' ', '').replace('-', '').replace(':', '')
@@ -91,10 +91,13 @@ def handle_message(event):
     
     if reply == '[ERR: No Reply Matched]':
         reply = 'Maaf Saat ini IslamicBot belum faham apa yang anda maksud, silahkan gunakan pertanyaan yang benar'
-
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text=reply))
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text=reply))
+    else:
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(text=reply))
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT",5000))
