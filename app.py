@@ -43,8 +43,8 @@ stemmer = factory.create_stemmer()
 
 
 # Developer Trial Mode
-line_bot_api = LineBotApi('4vmxXW+ZUCbb8ZoN3NB6KK09pHJqnZEv1fabnZy0YKesMirubmTPvyt48kNUkaPuBxbXSXvM9sSOr6yqZRrc4/ztlziD3E+wfdIQLtm2gVHlUQu2w81DnuABLEmd8Du3+8LscUdf5afT4qWnOoU/sAdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('850c8b3703fc74a8b869ff582ebb0ba5')
+line_bot_api = LineBotApi('API_KEY')
+handler = WebhookHandler('CHANNEL')
 
 def time_to_int(t):
         t = t.replace(' ', '').replace('-', '').replace(':', '')
