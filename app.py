@@ -75,7 +75,7 @@ def handle_message(event):
     timestamp = event.timestamp
 
     msg_stem = stemmer.stem(text)
-
+    print(event)
     print(msg_stem)
 
     fuzzy_result = process.extractOne(msg_stem, matching)
@@ -84,8 +84,7 @@ def handle_message(event):
         userId = event.source.user_id
         print(userId)
     print(timestamp)
-    
-        print(event)
+
     reply = bot.reply("localuser", fuzzy_result[0])
     print(reply)
     
