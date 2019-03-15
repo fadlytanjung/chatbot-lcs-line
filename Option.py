@@ -25,10 +25,9 @@ from linebot.models import (
     TextComponent, SpacerComponent, IconComponent, ButtonComponent,
     SeparatorComponent, QuickReply, QuickReplyButton
 )
-# line_bot_api = LineBotApi('DQj5+Q/4jomyAxECOKGwvXX0v5LGSnbG43DubRvXYKlp3PNGqL/n70r7Ju4nsIcWpWWbDhJy02yUyBILFFZxnciKxLYI37V3euSSJ0o/aLRETZ2bS63mHC0cACQ4X6TXz16T9Bw1mXQI66/3wKw/0gdB04t89/1O/w1cDnyilFU=')
-# handler = WebhookHandler('4c48925038eb080a095f04658f6765f4')
-line_bot_api = LineBotApi('ca7M0CHLjlE6Lz7xu7MAb8NKm2HdHqQ5sfCU25DCO2/KePgbxruIFiV1C8g4tnlmyn+YqLLQg4DzR7zQ69Hlx/V4IkZ6VpHOpSJRfWno4mlTO0LNbsbfuzEJxas01IP18/6BSXO5ef9kpEeBPkenkgdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('1dd65fab1df91ad26400faa771ed952c')
+
+line_bot_api = LineBotApi('<ApiKey>')
+handler = WebhookHandler('<Chanel>')
 
 list_bot_button = TemplateSendMessage(
     alt_text='Buttons template',
