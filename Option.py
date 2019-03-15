@@ -72,7 +72,7 @@ image_carousel_template = TemplateSendMessage(
 location_restaurant_message = TemplateSendMessage(
     alt_text='Buttons template',
     template=ButtonsTemplate(
-        thumbnail_image_url='https://maps.googleapis.com/maps/api/staticmap?zoom=14&size=500x300&maptype=roadmap&markers=color:red|label:R|-6.202699700000001,106.8186391&markers=color:red|label:R|-6.196727999999999,106.822582&markers=color:red|label:R|-6.1974609,106.8238203&markers=color:red|label:R|-6.1948222,106.820222&key=AIzaSyCcgwM27TrSD7r_HGUZRORsCfhU96k5VBw',
+        thumbnail_image_url='https://maps.googleapis.com/maps/api/staticmap?zoom=14&size=500x300&maptype=roadmap&markers=color:red|label:R|-6.202699700000001,106.8186391&markers=color:red|label:R|-6.196727999999999,106.822582&markers=color:red|label:R|-6.1974609,106.8238203&markers=color:red|label:R|-6.1948222,106.820222&key=API_KEY',
         # title='Daftar Bot',
         # text='Location',
         actions=[
@@ -93,7 +93,7 @@ location_restaurant_message = TemplateSendMessage(
          )
     )
 def get_restaurant_nearby():
-    data = requests.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-6.202738,106.8187219&radius=1500&type=restaurant&key=AIzaSyCcgwM27TrSD7r_HGUZRORsCfhU96k5VBw")
+    data = requests.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-6.202738,106.8187219&radius=1500&type=restaurant&key=API_KEY")
     return data.json()
 
 def say_hai_msg(event):
